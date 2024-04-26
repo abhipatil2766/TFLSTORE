@@ -3,6 +3,8 @@ sudo apt update
 sudo apt install docker.io
 sudo mkidr foldername
 cd foldername
+git clone link
+cd tflstore
 sudo docker build -t tflstore .
 sudo docker run --name tfl -d -p 8000:80000 tflstore
 sudo docker ps
