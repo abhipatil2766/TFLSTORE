@@ -1,0 +1,15 @@
+
+sudo apt update
+sudo apt install docker.io
+sudo mkidr foldername
+cd foldername
+sudo docker build -t tflstore .
+sudo docker run --name tfl -d -p 8000:80000 tflstore
+sudo docker ps
+
+
+********
+
+
+for change permission 
+sudo chmod 777 <filename>
